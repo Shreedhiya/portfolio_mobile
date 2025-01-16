@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "navbar navbar"
+    "sidebar main"
+    "sidebar footer";
+}
+
+nav{
+    grid-area: navbar;
+    font-size: 35px;
+    letter-spacing: 1px;
+    color:black;
+    font-weight: bold;
+    background-color:white;
+   
+}
+.nav-links a{
+    text-decoration: none;
+
+}
+.nav-links{
+    list-style: none;
+    background-color: rgb(107, 123, 129);
+    color:rgb(6, 105, 145);
+}
+
+aside{
+    grid-area: sidebar;
+    padding: 30px;
+    font-size: 20px;
+    background:rgb(107, 123, 129);
+}
+main{
+    grid-area: main;
+    background-color: white;
+    margin-left: 10px;
+
+}
+.middle3 img{
+    height: 150px;
+    width: 100px;
+    padding-left: 30px;
+    border-radius: 10px;
+}
+.black{
+    color:black;
+    font-weight: bold;
+}
+.middle1{
+    color: black;
+    font-size: large;
+}
+.middle1 h1{
+    color: black;
+}
+.middle1 h4{
+    color: black;
+}
+/* .middle2{
+    position: absolute;
+    top:320px;
+    left:100px;
+} */
+
+.middle2 button{
+    top: 800px;
+    width: 120px;
+    height: 30px;
+    font-size: large;
+    background-color: brown;
+    border-radius: 20px;
+    border: 2px black solid;
+}
+
+    
+.logos{ 
+
+    color: #333;
+}
+.logos a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    
+} 
+.logos a i{
+    font-size: 10em;
+    color: black;
+}
+
+footer{
+    grid-area: footer;
+    /* background: white; */
+    color:black;
+    padding: 2em;
+    font-size: 12px;
+    background-color: #555151;
+}
